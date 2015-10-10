@@ -36,9 +36,32 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="project">PROJECT</h1>
-<p>DESCRIPTION</p>
-</div>
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="es6-library-template">ES6 Library Template</h1>
+<p>This is a template for making an ES6 library.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>ES6 via <a href="https://babeljs.io/">Babel</a></li>
+<li>Documentation via <a href="https://www.gitbook.com/">Gitbook</a></li>
+<li>API documentation via <a href="https://esdoc.org/">Esdoc</a></li>
+<li>Testing via <a href="https://mochajs.org/">Mocha</a> and <a href="">Chai</a></li>
+</ul>
+<h2 id="assumptions">Assumptions</h2>
+<ul>
+<li>The <code>package.json</code> file assumes that you&apos;ll be using <a href="http://github.com">Github</a> to host your project code.</li>
+</ul>
+<h2 id="to-use-as-a-template-for-your-own-project">To use as a template for your own project</h2>
+<p>Run the following commands:</p>
+<pre><code><code class="source-code prettyprint">git remote add template https://github.com/TypeInferred/es6-gitbook-module-template
+git fetch template
+git rebase template/master
+npm install replace
+./node_modules/.bin/replace &apos;PROJECT&apos; &apos;&lt;YOUR_GITHUB_PROJECT_NAME&gt;&apos; . -r
+./node_modules/.bin/replace &apos;OWNER&apos; &apos;&lt;YOUR_GITHUB_USER_OR_ORG&gt;&apos; . -r</code>
+</code></pre><h2 id="to-build">To build</h2>
+<pre><code><code class="source-code prettyprint">npm run build</code>
+</code></pre><h2 id="to-publish">To publish</h2>
+<pre><code><code class="source-code prettyprint">npm publish</code>
+</code></pre></div>
 </div>
 
 <footer class="footer">

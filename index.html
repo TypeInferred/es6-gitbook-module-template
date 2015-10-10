@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Introduction | PROJECT</title>
+        <title>Introduction | ES6 Library Template</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="DESCRIPTION">
+        <meta name="description" content="This is a template for making an ES6 library.">
         <meta name="generator" content="GitBook 2.4.3">
         
         
@@ -38,7 +38,7 @@
     <body>
         
         
-    <div class="book" data-level="0" data-basepath="." data-revision="Sat Oct 10 2015 23:45:34 GMT+0100 (BST)">
+    <div class="book" data-level="0" data-basepath="." data-revision="Sun Oct 11 2015 00:41:08 GMT+0100 (BST)">
     
 
 <div class="book-summary">
@@ -180,7 +180,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="./" >PROJECT</a>
+        <a href="./" >ES6 Library Template</a>
     </h1>
 </div>
 
@@ -190,9 +190,32 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="project">PROJECT</h1>
-<p>DESCRIPTION</p>
-
+                        <h1 id="es6-library-template">ES6 Library Template</h1>
+<p>This is a template for making an ES6 library.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>ES6 via <a href="https://babeljs.io/" target="_blank">Babel</a></li>
+<li>Documentation via <a href="https://www.gitbook.com/" target="_blank">Gitbook</a></li>
+<li>API documentation via <a href="https://esdoc.org/" target="_blank">Esdoc</a></li>
+<li>Testing via <a href="https://mochajs.org/" target="_blank">Mocha</a> and <a href="">Chai</a></li>
+</ul>
+<h2 id="assumptions">Assumptions</h2>
+<ul>
+<li>The <code>package.json</code> file assumes that you&apos;ll be using <a href="http://github.com" target="_blank">Github</a> to host your project code.</li>
+</ul>
+<h2 id="to-use-as-a-template-for-your-own-project">To use as a template for your own project</h2>
+<p>Run the following commands:</p>
+<pre><code>git remote add template https://github.com/TypeInferred/es6-gitbook-module-template
+git fetch template
+git rebase template/master
+npm install replace
+./node_modules/.bin/replace &apos;PROJECT&apos; &apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>YOUR_GITHUB_PROJECT_NAME</span><span class="token punctuation">&gt;</span></span>&apos; . -r
+./node_modules/.bin/replace &apos;OWNER&apos; &apos;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>YOUR_GITHUB_USER_OR_ORG</span><span class="token punctuation">&gt;</span></span>&apos; . -r
+</code></pre><h2 id="to-build">To build</h2>
+<pre><code>npm run build
+</code></pre><h2 id="to-publish">To publish</h2>
+<pre><code>npm publish
+</code></pre>
                     
                     </section>
                 
